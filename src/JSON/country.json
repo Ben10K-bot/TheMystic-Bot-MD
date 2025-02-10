@@ -1,0 +1,2054 @@
+{
+  "1": {
+   "name": "United States",
+   "dialCode": "+1",
+   "emoji": "🇺🇸",
+   "code": "US",
+   "timezone": "America/New_York",
+   "language": "English",
+   "languageCode": "en"
+  },
+  "7": {
+   "name": "Russia",
+   "dialCode": "+7",
+   "emoji": "🇷🇺",
+   "code": "RU",
+   "timezone": "Europe/Kaliningrad",
+   "language": "Russian", 
+   "languageCode": "ru" 
+  },
+  "20": {
+   "name": "Egypt",
+   "dialCode": "+20",
+   "emoji": "🇪🇬",
+   "code": "EG",
+   "timezone": "Africa/Cairo",
+   "language": "Arabic", 
+   "languageCode": "ar" 
+  },
+  "27": {
+   "name": "South Africa",
+   "dialCode": "+27",
+   "emoji": "🇿🇦",
+   "code": "ZA",
+   "timezone": "Africa/Johannesburg",
+   "language": "Afrikaans", 
+   "languageCode": "af" 
+  },
+  "30": {
+   "name": "Greece",
+   "dialCode": "+30",
+   "emoji": "🇬🇷",
+   "code": "GR",
+   "timezone": "Europe/Athens",
+   "language": "Greek", 
+   "languageCode": "el" 
+  },
+  "31": {
+   "name": "Netherlands",
+   "dialCode": "+31",
+   "emoji": "🇳🇱",
+   "code": "NL",
+   "timezone": "Europe/Amsterdam",
+   "language": "Dutch", 
+   "languageCode": "nl" 
+  },
+  "32": {
+   "name": "Belgium",
+   "dialCode": "+32",
+   "emoji": "🇧🇪",
+   "code": "BE",
+   "timezone": "Europe/Brussels",
+   "language": "Dutch", 
+   "languageCode": "nl" 
+  },
+  "33": {
+   "name": "France",
+   "dialCode": "+33",
+   "emoji": "🇫🇷",
+   "code": "FR",
+   "timezone": "Europe/Paris",
+   "language": "French", 
+   "languageCode": "fr" 
+  },
+  "34": {
+   "name": "Spain",
+   "dialCode": "+34",
+   "emoji": "🇪🇸",
+   "code": "ES",
+   "timezone": "Europe/Madrid",
+   "language": "Spanish", 
+   "languageCode": "es" 
+  },
+  "36": {
+   "name": "Hungary",
+   "dialCode": "+36",
+   "emoji": "🇭🇺",
+   "code": "HU",
+   "timezone": "Europe/Budapest",
+   "language": "Hungarian", 
+   "languageCode": "hu" 
+  },
+  "39": {
+   "name": "Italy",
+   "dialCode": "+39",
+   "emoji": "🇮🇹",
+   "code": "IT",
+   "timezone": "Europe/Rome",
+   "language": "Italian", 
+   "languageCode": "it" 
+  },
+  "40": {
+   "name": "Romania",
+   "dialCode": "+40",
+   "emoji": "🇷🇴",
+   "code": "RO",
+   "timezone": "Europe/Bucharest",
+   "language": "Romanian", 
+   "languageCode": "ro" 
+  },
+  "41": {
+   "name": "Switzerland",
+   "dialCode": "+41",
+   "emoji": "🇨🇭",
+   "code": "CH",
+   "timezone": "Europe/Zurich",
+   "language": "German", 
+   "languageCode": "de" 
+  },
+  "43": {
+   "name": "Austria",
+   "dialCode": "+43",
+   "emoji": "🇦🇹",
+   "code": "AT",
+   "timezone": "Europe/Vienna",
+   "language": "German", 
+   "languageCode": "de" 
+  },
+  "44": {
+   "name": "United Kingdom",
+   "dialCode": "+44",
+   "emoji": "🇬🇧",
+   "code": "GB",
+   "timezone": "Europe/London",
+   "language": "English",
+   "languageCode": "en"
+  },
+  "45": {
+   "name": "Denmark",
+   "dialCode": "+45",
+   "emoji": "🇩🇰",
+   "code": "DK",
+   "timezone": "Europe/Copenhagen",
+   "language": "Danish", 
+   "languageCode": "da" 
+  },
+  "46": {
+   "name": "Sweden",
+   "dialCode": "+46",
+   "emoji": "🇸🇪",
+   "code": "SE",
+   "timezone": "Europe/Stockholm",
+   "language": "Swedish", 
+   "languageCode": "sv" 
+  },
+  "47": {
+   "name": "Svalbard and Jan Mayen",
+   "dialCode": "+47",
+   "emoji": "🇸🇯",
+   "code": "SJ",
+   "timezone": "Arctic/Longyearbyen",
+   "language": "Norwegian", 
+   "languageCode": "no" 
+  },
+  "48": {
+   "name": "Poland",
+   "dialCode": "+48",
+   "emoji": "🇵🇱",
+   "code": "PL",
+   "timezone": "Europe/Warsaw",
+   "language": "Polish", 
+   "languageCode": "pl" 
+  },
+  "49": {
+   "name": "Germany",
+   "dialCode": "+49",
+   "emoji": "🇩🇪",
+   "code": "DE",
+   "timezone": "Europe/Berlin",
+   "language": "German", 
+   "languageCode": "de" 
+  },
+  "51": {
+   "name": "Peru",
+   "dialCode": "+51",
+   "emoji": "🇵🇪",
+   "code": "PE",
+   "timezone": "America/Lima",
+   "language": "Spanish", 
+   "languageCode": "es" 
+  },
+  "52": {
+   "name": "Mexico",
+   "dialCode": "+52",
+   "emoji": "🇲🇽",
+   "code": "MX",
+   "timezone": "America/Mexico_City",
+   "language": "Spanish", 
+   "languageCode": "es" 
+  },
+  "53": {
+   "name": "Cuba",
+   "dialCode": "+53",
+   "emoji": "🇨🇺",
+   "code": "CU",
+   "timezone": "America/Havana",
+   "language": "Spanish", 
+   "languageCode": "es" 
+  },
+  "54": {
+   "name": "Argentina",
+   "dialCode": "+54",
+   "emoji": "🇦🇷",
+   "code": "AR",
+   "timezone": "America/Argentina/Buenos_Aires",
+   "language": "Spanish", 
+   "languageCode": "es" 
+  },
+   "55": {
+    "name": "Brazil",
+    "dialCode": "+55",
+    "emoji": "🇧🇷",
+    "code": "BR",
+    "timezone": "America/Sao_Paulo",
+    "language": "Portuguese", 
+    "languageCode": "pt" 
+   },
+   "56": {
+    "name": "Chile",
+    "dialCode": "+56",
+    "emoji": "🇨🇱",
+    "code": "CL",
+    "timezone": "America/Santiago",
+    "language": "Spanish", 
+    "languageCode": "es" 
+   },
+   "57": {
+    "name": "Colombia",
+    "dialCode": "+57",
+    "emoji": "🇨🇴",
+    "code": "CO",
+    "timezone": "America/Bogota",
+    "language": "Spanish", 
+    "languageCode": "es" 
+   },
+   "58": {
+    "name": "Venezuela, Bolivarian Republic of Venezuela",
+    "dialCode": "+58",
+    "emoji": "🇻🇪",
+    "code": "VE",
+    "timezone": "America/Caracas",
+    "language": "Spanish", 
+    "languageCode": "es" 
+   },
+   "60": {
+    "name": "Malaysia",
+    "dialCode": "+60",
+    "emoji": "🇲🇾",
+    "code": "MY",
+    "timezone": "Asia/Kuala_Lumpur",
+    "language": "Malay", 
+    "languageCode": "ms" 
+   },
+   "61": {
+    "name": "Cocos (Keeling) Islands",
+    "dialCode": "+61",
+    "emoji": "🇨🇨",
+    "code": "CC",
+    "timezone": "Indian/Cocos",
+    "language": "English",
+    "languageCode": "en"
+   },
+   "62": {
+    "name": "Indonesia",
+    "dialCode": "+62",
+    "emoji": "🇮🇩",
+    "code": "ID",
+    "timezone": "Asia/Jakarta",
+    "language": "Indonesian", 
+    "languageCode": "id" 
+   },
+   "63": {
+    "name": "Philippines",
+    "dialCode": "+63",
+    "emoji": "🇵🇭",
+    "code": "PH",
+    "timezone": "Asia/Manila",
+    "language": "Filipino", 
+    "languageCode": "fil" 
+   },
+   "64": {
+    "name": "New Zealand",
+    "dialCode": "+64",
+    "emoji": "🇳🇿",
+    "code": "NZ",
+    "timezone": "Pacific/Auckland",
+    "language": "English",
+    "languageCode": "en"
+   },
+   "65": {
+    "name": "Singapore",
+    "dialCode": "+65",
+    "emoji": "🇸🇬",
+    "code": "SG",
+    "timezone": "Asia/Singapore",
+    "language": "English",
+    "languageCode": "en"
+   },
+   "66": {
+    "name": "Thailand",
+    "dialCode": "+66",
+    "emoji": "🇹🇭",
+    "code": "TH",
+    "timezone": "Asia/Bangkok",
+    "language": "Thai", 
+    "languageCode": "th" 
+   },
+   "77": {
+    "name": "Kazakhstan",
+    "dialCode": "+77",
+    "emoji": "🇰🇿",
+    "code": "KZ",
+    "timezone": "Asia/Almaty",
+    "language": "Kazakh", 
+    "languageCode": "kk" 
+   },
+   "81": {
+    "name": "Japan",
+    "dialCode": "+81",
+    "emoji": "🇯🇵",
+    "code": "JP",
+    "timezone": "Asia/Tokyo",
+    "language": "Japanese", 
+    "languageCode": "ja" 
+   },
+   "82": {
+    "name": "Korea, Republic of South Korea",
+    "dialCode": "+82",
+    "emoji": "🇰🇷",
+    "code": "KR",
+    "timezone": "Asia/Seoul",
+    "language": "Korean", 
+    "languageCode": "ko" 
+   },
+   "84": {
+    "name": "Vietnam",
+    "dialCode": "+84",
+    "emoji": "🇻🇳",
+    "code": "VN",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "language": "Vietnamese", 
+    "languageCode": "vi" 
+   },
+   "86": {
+    "name": "China",
+    "dialCode": "+86",
+    "emoji": "🇨🇳",
+    "code": "CN",
+    "timezone": "Asia/Shanghai",
+    "language": "Chinese", 
+    "languageCode": "zh" 
+   },
+   "90": {
+    "name": "Turkey",
+    "dialCode": "+90",
+    "emoji": "🇹🇷",
+    "code": "TR",
+    "timezone": "Europe/Istanbul",
+    "language": "Turkish", 
+    "languageCode": "tr" 
+   },
+   "91": {
+    "name": "India",
+    "dialCode": "+91",
+    "emoji": "🇮🇳",
+    "code": "IN",
+    "timezone": "Asia/Kolkata",
+    "language": "Hindi", 
+    "languageCode": "hi" 
+   },
+   "92": {
+    "name": "Pakistan",
+    "dialCode": "+92",
+    "emoji": "🇵🇰",
+    "code": "PK",
+    "timezone": "Asia/Karachi",
+    "language": "Urdu", 
+    "languageCode": "ur" 
+   },
+   "93": {
+    "name": "Afghanistan",
+    "dialCode": "+93",
+    "emoji": "🇦🇫",
+    "code": "AF",
+    "timezone": "Asia/Kabul",
+    "language": "Pashto", 
+    "languageCode": "ps" 
+   },
+    "94": {
+  "name": "Sri Lanka",
+  "dialCode": "+94",
+  "emoji": "🇱🇰",
+  "code": "LK",
+  "timezone": "Asia/Colombo",
+  "language": "Sinhalese", 
+  "languageCode": "si" 
+    },
+    "95": {
+  "name": "Myanmar",
+  "dialCode": "+95",
+  "emoji": "🇲🇲",
+  "code": "MM",
+  "timezone": "Asia/Yangon",
+  "language": "Burmese", 
+  "languageCode": "my" 
+    },
+    "98": {
+  "name": "Iran, Islamic Republic of Persian Gulf",
+  "dialCode": "+98",
+  "emoji": "🇮🇷",
+  "code": "IR",
+  "timezone": "Asia/Tehran",
+  "language": "Persian", 
+  "languageCode": "fa" 
+    },
+    "211": {
+  "name": "South Sudan",
+  "dialCode": "+211",
+  "emoji": "🇸🇸",
+  "code": "SS",
+  "timezone": "Africa/Juba",
+  "language": "English",
+  "languageCode": "en" 
+    },
+    "212": {
+  "name": "Morocco",
+  "dialCode": "+212",
+  "emoji": "🇲🇦",
+  "code": "MA",
+  "timezone": "Africa/Casablanca",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "213": {
+  "name": "Algeria",
+  "dialCode": "+213",
+  "emoji": "🇩🇿",
+  "code": "DZ",
+  "timezone": "Africa/Algiers",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "216": {
+  "name": "Tunisia",
+  "dialCode": "+216",
+  "emoji": "🇹🇳",
+  "code": "TN",
+  "timezone": "Africa/Tunis",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "218": {
+  "name": "Libyan Arab Jamahiriya",
+  "dialCode": "+218",
+  "emoji": "🇱🇾",
+  "code": "LY",
+  "timezone": "Africa/Tripoli",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "220": {
+  "name": "Gambia",
+  "dialCode": "+220",
+  "emoji": "🇬🇲",
+  "code": "GM",
+  "timezone": "Africa/Banjul",
+  "language": "English",
+  "languageCode": "en" 
+    },
+    "221": {
+  "name": "Senegal",
+  "dialCode": "+221",
+  "emoji": "🇸🇳",
+  "code": "SN",
+  "timezone": "Africa/Dakar",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "222": {
+  "name": "Mauritania",
+  "dialCode": "+222",
+  "emoji": "🇲🇷",
+  "code": "MR",
+  "timezone": "Africa/Nouakchott",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "223": {
+  "name": "Mali",
+  "dialCode": "+223",
+  "emoji": "🇲🇱",
+  "code": "ML",
+  "timezone": "Africa/Bamako",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "224": {
+  "name": "Guinea",
+  "dialCode": "+224",
+  "emoji": "🇬🇳",
+  "code": "GN",
+  "timezone": "Africa/Conakry",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "225": {
+  "name": "Cote d'Ivoire",
+  "dialCode": "+225",
+  "emoji": "🇨🇮",
+  "code": "CI",
+  "timezone": "Africa/Abidjan",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "226": {
+  "name": "Burkina Faso",
+  "dialCode": "+226",
+  "emoji": "🇧🇫",
+  "code": "BF",
+  "timezone": "Africa/Ouagadougou",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "227": {
+  "name": "Niger",
+  "dialCode": "+227",
+  "emoji": "🇳🇪",
+  "code": "NE",
+  "timezone": "Africa/Niamey",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "228": {
+  "name": "Togo",
+  "dialCode": "+228",
+  "emoji": "🇹🇬",
+  "code": "TG",
+  "timezone": "Africa/Lome",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "229": {
+  "name": "Benin",
+  "dialCode": "+229",
+  "emoji": "🇧🇯",
+  "code": "BJ",
+  "timezone": "Africa/Porto-Novo",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "230": {
+  "name": "Mauritius",
+  "dialCode": "+230",
+  "emoji": "🇲🇺",
+  "code": "MU",
+  "timezone": "Indian/Mauritius",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "231": {
+  "name": "Liberia",
+  "dialCode": "+231",
+  "emoji": "🇱🇷",
+  "code": "LR",
+  "timezone": "Africa/Monrovia",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "232": {
+  "name": "Sierra Leone",
+  "dialCode": "+232",
+  "emoji": "🇸🇱",
+  "code": "SL",
+  "timezone": "Africa/Freetown",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "233": {
+  "name": "Ghana",
+  "dialCode": "+233",
+  "emoji": "🇬🇭",
+  "code": "GH",
+  "timezone": "Africa/Accra",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "234": {
+  "name": "Nigeria",
+  "dialCode": "+234",
+  "emoji": "🇳🇬",
+  "code": "NG",
+  "timezone": "Africa/Lagos",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+  "235": {
+    "name": "Chad",
+    "dialCode": "+235",
+    "emoji": "🇹🇩",
+    "code": "TD",
+    "timezone": "Africa/Ndjamena",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "236": {
+    "name": "Central African Republic",
+    "dialCode": "+236",
+    "emoji": "🇨🇫",
+    "code": "CF",
+    "timezone": "Africa/Bangui",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "237": {
+    "name": "Cameroon",
+    "dialCode": "+237",
+    "emoji": "🇨🇲",
+    "code": "CM",
+    "timezone": "Africa/Douala",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "238": {
+    "name": "Cape Verde",
+    "dialCode": "+238",
+    "emoji": "🇨🇻",
+    "code": "CV",
+    "timezone": "Atlantic/Cape_Verde",
+    "language": "Portuguese", 
+    "languageCode": "pt" 
+  },
+  "239": {
+    "name": "Sao Tome and Principe",
+    "dialCode": "+239",
+    "emoji": "🇸🇹",
+    "code": "ST",
+    "timezone": "Africa/Sao_Tome",
+    "language": "Portuguese", 
+    "languageCode": "pt" 
+  },
+  "240": {
+    "name": "Equatorial Guinea",
+    "dialCode": "+240",
+    "emoji": "🇬🇶",
+    "code": "GQ",
+    "timezone": "Africa/Malabo",
+    "language": "Spanish", 
+    "languageCode": "es" 
+  },
+  "241": {
+    "name": "Gabon",
+    "dialCode": "+241",
+    "emoji": "🇬🇦",
+    "code": "GA",
+    "timezone": "Africa/Libreville",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "242": {
+    "name": "Congo",
+    "dialCode": "+242",
+    "emoji": "🇨🇬",
+    "code": "CG",
+    "timezone": "Africa/Brazzaville",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "243": {
+    "name": "Congo, The Democratic Republic of the Congo",
+    "dialCode": "+243",
+    "emoji": "🇨🇩",
+    "code": "CD",
+    "timezone": "Africa/Kinshasa",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "244": {
+    "name": "Angola",
+    "dialCode": "+244",
+    "emoji": "🇦🇴",
+    "code": "AO",
+    "timezone": "Africa/Luanda",
+    "language": "Portuguese", 
+    "languageCode": "pt" 
+  },
+  "245": {
+    "name": "Guinea-Bissau",
+    "dialCode": "+245",
+    "emoji": "🇬🇼",
+    "code": "GW",
+    "timezone": "Africa/Bissau",
+    "language": "Portuguese", 
+    "languageCode": "pt" 
+  },
+  "246": {
+    "name": "British Indian Ocean Territory",
+    "dialCode": "+246",
+    "emoji": "🇮🇴",
+    "code": "IO",
+    "timezone": "Indian/Chagos",
+    "language": "English",
+    "languageCode": "en" 
+  },
+  "248": {
+    "name": "Seychelles",
+    "dialCode": "+248",
+    "emoji": "🇸🇨",
+    "code": "SC",
+    "timezone": "Indian/Mahe",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "249": {
+    "name": "Sudan",
+    "dialCode": "+249",
+    "emoji": "🇸🇩",
+    "code": "SD",
+    "timezone": "Africa/Khartoum",
+    "language": "Arabic", 
+    "languageCode": "ar" 
+  },
+  "250": {
+    "name": "Rwanda",
+    "dialCode": "+250",
+    "emoji": "🇷🇼",
+    "code": "RW",
+    "timezone": "Africa/Kigali",
+    "language": "Kinyarwanda", 
+    "languageCode": "rw" 
+  },
+  "251": {
+    "name": "Ethiopia",
+    "dialCode": "+251",
+    "emoji": "🇪🇹",
+    "code": "ET",
+    "timezone": "Africa/Addis_Ababa",
+    "language": "Amharic", 
+    "languageCode": "am" 
+  },
+  "252": {
+    "name": "Somalia",
+    "dialCode": "+252",
+    "emoji": "🇸🇴",
+    "code": "SO",
+    "timezone": "Africa/Mogadishu",
+    "language": "Somali", 
+    "languageCode": "so" 
+  },
+  "253": {
+    "name": "Djibouti",
+    "dialCode": "+253",
+    "emoji": "🇩🇯",
+    "code": "DJ",
+    "timezone": "Africa/Djibouti",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "254": {
+    "name": "Kenya",
+    "dialCode": "+254",
+    "emoji": "🇰🇪",
+    "code": "KE",
+    "timezone": "Africa/Nairobi",
+    "language": "Swahili", 
+    "languageCode": "sw" 
+  },
+  "255": {
+    "name": "Tanzania, United Republic of Tanzania",
+    "dialCode": "+255",
+    "emoji": "🇹🇿",
+    "code": "TZ",
+    "timezone": "Africa/Dar_es_Salaam",
+    "language": "Swahili", 
+    "languageCode": "sw" 
+  },
+  "256": {
+    "name": "Uganda",
+    "dialCode": "+256",
+    "emoji": "🇺🇬",
+    "code": "UG",
+    "timezone": "Africa/Kampala",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "257": {
+    "name": "Burundi",
+    "dialCode": "+257",
+    "emoji": "🇧🇮",
+    "code": "BI",
+    "timezone": "Africa/Bujumbura",
+    "language": "Kirundi", 
+    "languageCode": "rn" 
+  },
+    "258": {
+  "name": "Mozambique",
+  "dialCode": "+258",
+  "emoji": "🇲🇿",
+  "code": "MZ",
+  "timezone": "Africa/Maputo",
+  "language": "Portuguese", 
+  "languageCode": "pt" 
+    },
+    "260": {
+  "name": "Zambia",
+  "dialCode": "+260",
+  "emoji": "🇿🇲",
+  "code": "ZM",
+  "timezone": "Africa/Lusaka",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "261": {
+  "name": "Madagascar",
+  "dialCode": "+261",
+  "emoji": "🇲🇬",
+  "code": "MG",
+  "timezone": "Indian/Antananarivo",
+  "language": "Malagasy", 
+  "languageCode": "mg" 
+    },
+    "262": {
+  "name": "Reunion",
+  "dialCode": "+262",
+  "emoji": "🇷🇪",
+  "code": "RE",
+  "timezone": "Indian/Reunion",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "263": {
+  "name": "Zimbabwe",
+  "dialCode": "+263",
+  "emoji": "🇿🇼",
+  "code": "ZW",
+  "timezone": "Africa/Harare",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "264": {
+  "name": "Namibia",
+  "dialCode": "+264",
+  "emoji": "🇳🇦",
+  "code": "NA",
+  "timezone": "Africa/Windhoek",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "265": {
+  "name": "Malawi",
+  "dialCode": "+265",
+  "emoji": "🇲🇼",
+  "code": "MW",
+  "timezone": "Africa/Blantyre",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "266": {
+  "name": "Lesotho",
+  "dialCode": "+266",
+  "emoji": "🇱🇸",
+  "code": "LS",
+  "timezone": "Africa/Maseru",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "267": {
+  "name": "Botswana",
+  "dialCode": "+267",
+  "emoji": "🇧🇼",
+  "code": "BW",
+  "timezone": "Africa/Gaborone",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "268": {
+  "name": "Swaziland",
+  "dialCode": "+268",
+  "emoji": "🇸🇿",
+  "code": "SZ",
+  "timezone": "Africa/Mbabane",
+  "language": "Swazi", 
+  "languageCode": "ss" 
+    },
+    "269": {
+  "name": "Comoros",
+  "dialCode": "+269",
+  "emoji": "🇰🇲",
+  "code": "KM",
+  "timezone": "Indian/Comoro",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "290": {
+  "name": "Saint Helena, Ascension and Tristan Da Cunha",
+  "dialCode": "+290",
+  "emoji": "🇸🇭",
+  "code": "SH",
+  "timezone": "Atlantic/St_Helena",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "291": {
+  "name": "Eritrea",
+  "dialCode": "+291",
+  "emoji": "🇪🇷",
+  "code": "ER",
+  "timezone": "Africa/Asmara",
+  "language": "Tigrinya", 
+  "languageCode": "ti" 
+    },
+    "297": {
+  "name": "Aruba",
+  "dialCode": "+297",
+  "emoji": "🇦🇼",
+  "code": "AW",
+  "timezone": "America/Aruba",
+  "language": "Dutch", 
+  "languageCode": "nl" 
+    },
+    "298": {
+  "name": "Faroe Islands",
+  "dialCode": "+298",
+  "emoji": "🇫🇴",
+  "code": "FO",
+  "timezone": "Atlantic/Faroe",
+  "language": "Faroese", 
+  "languageCode": "fo" 
+    },
+    "299": {
+  "name": "Greenland",
+  "dialCode": "+299",
+  "emoji": "🇬🇱",
+  "code": "GL",
+  "timezone": "America/Godthab",
+  "language": "Greenlandic", 
+  "languageCode": "kl" 
+    },
+    "345": {
+  "name": "Cayman Islands",
+  "dialCode": "+345",
+  "emoji": "🇰🇾",
+  "code": "KY",
+  "timezone": "America/Cayman",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "350": {
+  "name": "Gibraltar",
+  "dialCode": "+350",
+  "emoji": "🇬🇮",
+  "code": "GI",
+  "timezone": "Europe/Gibraltar",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "351": {
+  "name": "Portugal",
+  "dialCode": "+351",
+  "emoji": "🇵🇹",
+  "code": "PT",
+  "timezone": "Europe/Lisbon",
+  "language": "Portuguese", 
+  "languageCode": "pt" 
+    },
+    "352": {
+  "name": "Luxembourg",
+  "dialCode": "+352",
+  "emoji": "🇱🇺",
+  "code": "LU",
+  "timezone": "Europe/Luxembourg",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "353": {
+  "name": "Ireland",
+  "dialCode": "+353",
+  "emoji": "🇮🇪",
+  "code": "IE",
+  "timezone": "Europe/Dublin",
+  "language": "Irish", 
+  "languageCode": "ga" 
+    },
+    "354": {
+  "name": "Iceland",
+  "dialCode": "+354",
+  "emoji": "🇮🇸",
+  "code": "IS",
+  "timezone": "Atlantic/Reykjavik",
+  "language": "Icelandic", 
+  "languageCode": "is" 
+    },
+  "355": {
+    "name": "Albania",
+    "dialCode": "+355",
+    "emoji": "🇦🇱",
+    "code": "AL",
+    "timezone": "Europe/Tirane",
+    "language": "Albanian", 
+    "languageCode": "sq" 
+  },
+  "356": {
+    "name": "Malta",
+    "dialCode": "+356",
+    "emoji": "🇲🇹",
+    "code": "MT",
+    "timezone": "Europe/Malta",
+    "language": "Maltese", 
+    "languageCode": "mt" 
+  },
+  "357": {
+    "name": "Cyprus",
+    "dialCode": "+357",
+    "emoji": "🇨🇾",
+    "code": "CY",
+    "timezone": "Asia/Nicosia",
+    "language": "Greek", 
+    "languageCode": "el" 
+  },
+  "358": {
+    "name": "Finland",
+    "dialCode": "+358",
+    "emoji": "🇫🇮",
+    "code": "FI",
+    "timezone": "Europe/Helsinki",
+    "language": "Finnish", 
+    "languageCode": "fi" 
+  },
+  "359": {
+    "name": "Bulgaria",
+    "dialCode": "+359",
+    "emoji": "🇧🇬",
+    "code": "BG",
+    "timezone": "Europe/Sofia",
+    "language": "Bulgarian", 
+    "languageCode": "bg" 
+  },
+  "370": {
+    "name": "Lithuania",
+    "dialCode": "+370",
+    "emoji": "🇱🇹",
+    "code": "LT",
+    "timezone": "Europe/Vilnius",
+    "language": "Lithuanian", 
+    "languageCode": "lt" 
+  },
+  "371": {
+    "name": "Latvia",
+    "dialCode": "+371",
+    "emoji": "🇱🇻",
+    "code": "LV",
+    "timezone": "Europe/Riga",
+    "language": "Latvian", 
+    "languageCode": "lv" 
+  },
+  "372": {
+    "name": "Estonia",
+    "dialCode": "+372",
+    "emoji": "🇪🇪",
+    "code": "EE",
+    "timezone": "Europe/Tallinn",
+    "language": "Estonian", 
+    "languageCode": "et" 
+  },
+  "373": {
+    "name": "Moldova",
+    "dialCode": "+373",
+    "emoji": "🇲🇩",
+    "code": "MD",
+    "timezone": "Europe/Chisinau",
+    "language": "Romanian", 
+    "languageCode": "ro" 
+  },
+  "374": {
+    "name": "Armenia",
+    "dialCode": "+374",
+    "emoji": "🇦🇲",
+    "code": "AM",
+    "timezone": "Asia/Yerevan",
+    "language": "Armenian", 
+    "languageCode": "hy" 
+  },
+  "375": {
+    "name": "Belarus",
+    "dialCode": "+375",
+    "emoji": "🇧🇾",
+    "code": "BY",
+    "timezone": "Europe/Minsk",
+    "language": "Belarusian", 
+    "languageCode": "be" 
+  },
+  "376": {
+    "name": "Andorra",
+    "dialCode": "+376",
+    "emoji": "🇦🇩",
+    "code": "AD",
+    "timezone": "Europe/Andorra",
+    "language": "Catalan", 
+    "languageCode": "ca" 
+  },
+  "377": {
+    "name": "Monaco",
+    "dialCode": "+377",
+    "emoji": "🇲🇨",
+    "code": "MC",
+    "timezone": "Europe/Monaco",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "378": {
+    "name": "San Marino",
+    "dialCode": "+378",
+    "emoji": "🇸🇲",
+    "code": "SM",
+    "timezone": "Europe/San_Marino",
+    "language": "Italian", 
+    "languageCode": "it" 
+  },
+  "379": {
+    "name": "Holy See (Vatican City State)",
+    "dialCode": "+379",
+    "emoji": "🇻🇦",
+    "code": "VA",
+    "timezone": "Europe/Vatican",
+    "language": "Italian", 
+    "languageCode": "it" 
+  },
+  "380": {
+    "name": "Ukraine",
+    "dialCode": "+380",
+    "emoji": "🇺🇦",
+    "code": "UA",
+    "timezone": "Europe/Kiev",
+    "language": "Ukrainian", 
+    "languageCode": "uk" 
+  },
+  "381": {
+    "name": "Serbia",
+    "dialCode": "+381",
+    "emoji": "🇷🇸",
+    "code": "RS",
+    "timezone": "Europe/Belgrade",
+    "language": "Serbian", 
+    "languageCode": "sr" 
+  },
+  "382": {
+    "name": "Montenegro",
+    "dialCode": "+382",
+    "emoji": "🇲🇪",
+    "code": "ME",
+    "timezone": "Europe/Podgorica",
+    "language": "Montenegrin", 
+    "languageCode": "cnr" 
+  },
+  "385": {
+    "name": "Croatia",
+    "dialCode": "+385",
+    "emoji": "🇭🇷",
+    "code": "HR",
+    "timezone": "Europe/Zagreb",
+    "language": "Croatian", 
+    "languageCode": "hr" 
+  },
+  "386": {
+    "name": "Slovenia",
+    "dialCode": "+386",
+    "emoji": "🇸🇮",
+    "code": "SI",
+    "timezone": "Europe/Ljubljana",
+    "language": "Slovenian", 
+    "languageCode": "sl" 
+  },
+  "387": {
+    "name": "Bosnia and Herzegovina",
+    "dialCode": "+387",
+    "emoji": "🇧🇦",
+    "code": "BA",
+    "timezone": "Europe/Sarajevo",
+    "language": "Bosnian", 
+    "languageCode": "bs" 
+  },
+  "389": {
+    "name": "Macedonia",
+    "dialCode": "+389",
+    "emoji": "🇲🇰",
+    "code": "MK",
+    "timezone": "Europe/Skopje",
+    "language": "Macedonian", 
+    "languageCode": "mk" 
+  },
+    "420": {
+  "name": "Czech Republic",
+  "dialCode": "+420",
+  "emoji": "🇨🇿",
+  "code": "CZ",
+  "timezone": "Europe/Prague",
+  "language": "Czech", 
+  "languageCode": "cs" 
+    },
+    "421": {
+  "name": "Slovakia",
+  "dialCode": "+421",
+  "emoji": "🇸🇰",
+  "code": "SK",
+  "timezone": "Europe/Bratislava",
+  "language": "Slovak", 
+  "languageCode": "sk" 
+    },
+    "423": {
+  "name": "Liechtenstein",
+  "dialCode": "+423",
+  "emoji": "🇱🇮",
+  "code": "LI",
+  "timezone": "Europe/Vaduz",
+  "language": "German", 
+  "languageCode": "de" 
+    },
+    "500": {
+  "name": "South Georgia and the South Sandwich Islands",
+  "dialCode": "+500",
+  "emoji": "🇬🇸",
+  "code": "GS",
+  "timezone": "Atlantic/South_Georgia",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "501": {
+  "name": "Belize",
+  "dialCode": "+501",
+  "emoji": "🇧🇿",
+  "code": "BZ",
+  "timezone": "America/Belize",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "502": {
+  "name": "Guatemala",
+  "dialCode": "+502",
+  "emoji": "🇬🇹",
+  "code": "GT",
+  "timezone": "America/Guatemala",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "503": {
+  "name": "El Salvador",
+  "dialCode": "+503",
+  "emoji": "🇸🇻",
+  "code": "SV",
+  "timezone": "America/El_Salvador",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "504": {
+  "name": "Honduras",
+  "dialCode": "+504",
+  "emoji": "🇭🇳",
+  "code": "HN",
+  "timezone": "America/Tegucigalpa",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "505": {
+  "name": "Nicaragua",
+  "dialCode": "+505",
+  "emoji": "🇳🇮",
+  "code": "NI",
+  "timezone": "America/Managua",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "506": {
+  "name": "Costa Rica",
+  "dialCode": "+506",
+  "emoji": "🇨🇷",
+  "code": "CR",
+  "timezone": "America/Costa_Rica",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "507": {
+  "name": "Panama",
+  "dialCode": "+507",
+  "emoji": "🇵🇦",
+  "code": "PA",
+  "timezone": "America/Panama",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "508": {
+  "name": "Saint Pierre and Miquelon",
+  "dialCode": "+508",
+  "emoji": "🇵🇲",
+  "code": "PM",
+  "timezone": "America/Miquelon",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "509": {
+  "name": "Haiti",
+  "dialCode": "+509",
+  "emoji": "🇭🇹",
+  "code": "HT",
+  "timezone": "America/Port-au-Prince",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "590": {
+  "name": "Saint Martin",
+  "dialCode": "+590",
+  "emoji": "🇲🇫",
+  "code": "MF",
+  "timezone": "America/Marigot",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "591": {
+  "name": "Bolivia, Plurinational State of",
+  "dialCode": "+591",
+  "emoji": "🇧🇴",
+  "code": "BO",
+  "timezone": "America/La_Paz",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "593": {
+  "name": "Ecuador",
+  "dialCode": "+593",
+  "emoji": "🇪🇨",
+  "code": "EC",
+  "timezone": "America/Guayaquil",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "594": {
+  "name": "French Guiana",
+  "dialCode": "+594",
+  "emoji": "🇬🇫",
+  "code": "GF",
+  "timezone": "America/Cayenne",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "595": {
+  "name": "Paraguay",
+  "dialCode": "+595",
+  "emoji": "🇵🇾",
+  "code": "PY",
+  "timezone": "America/Asuncion",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "596": {
+  "name": "Martinique",
+  "dialCode": "+596",
+  "emoji": "🇲🇶",
+  "code": "MQ",
+  "timezone": "America/Martinique",
+  "language": "French", 
+  "languageCode": "fr" 
+    },
+    "597": {
+  "name": "Suriname",
+  "dialCode": "+597",
+  "emoji": "🇸🇷",
+  "code": "SR",
+  "timezone": "America/Paramaribo",
+  "language": "Dutch", 
+  "languageCode": "nl" 
+    },
+    "598": {
+  "name": "Uruguay",
+  "dialCode": "+598",
+  "emoji": "🇺🇾",
+  "code": "UY",
+  "timezone": "America/Montevideo",
+  "language": "Spanish", 
+  "languageCode": "es" 
+    },
+    "599": {
+  "name": "Netherlands Antilles",
+  "dialCode": "+599",
+  "emoji": "🇧🇶",
+  "code": "AN",
+  "timezone": "America/Curacao",
+  "language": "Dutch", 
+  "languageCode": "nl" 
+    },
+  "670": {
+    "name": "Timor-Leste",
+    "dialCode": "+670",
+    "emoji": "🇹🇱",
+    "code": "TL",
+    "timezone": "Asia/Dili",
+    "language": "Tetum", 
+    "languageCode": "tet" 
+  },
+  "672": {
+    "name": "Norfolk Island",
+    "dialCode": "+672",
+    "emoji": "🇳🇫",
+    "code": "NF",
+    "timezone": "Pacific/Norfolk",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "673": {
+    "name": "Brunei Darussalam",
+    "dialCode": "+673",
+    "emoji": "🇧🇳",
+    "code": "BN",
+    "timezone": "Asia/Brunei",
+    "language": "Malay", 
+    "languageCode": "ms" 
+  },
+  "674": {
+    "name": "Nauru",
+    "dialCode": "+674",
+    "emoji": "🇳🇷",
+    "code": "NR",
+    "timezone": "Pacific/Nauru",
+    "language": "Nauruan", 
+    "languageCode": "na" 
+  },
+  "675": {
+    "name": "Papua New Guinea",
+    "dialCode": "+675",
+    "emoji": "🇵🇬",
+    "code": "PG",
+    "timezone": "Pacific/Port_Moresby",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "676": {
+    "name": "Tonga",
+    "dialCode": "+676",
+    "emoji": "🇹🇴",
+    "code": "TO",
+    "timezone": "Pacific/Tongatapu",
+    "language": "Tongan", 
+    "languageCode": "to" 
+  },
+  "677": {
+    "name": "Solomon Islands",
+    "dialCode": "+677",
+    "emoji": "🇸🇧",
+    "code": "SB",
+    "timezone": "Pacific/Guadalcanal",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "678": {
+    "name": "Vanuatu",
+    "dialCode": "+678",
+    "emoji": "🇻🇺",
+    "code": "VU",
+    "timezone": "Pacific/Efate",
+    "language": "Bislama", 
+    "languageCode": "bi" 
+  },
+  "679": {
+    "name": "Fiji",
+    "dialCode": "+679",
+    "emoji": "🇫🇯",
+    "code": "FJ",
+    "timezone": "Pacific/Fiji",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "680": {
+    "name": "Palau",
+    "dialCode": "+680",
+    "emoji": "🇵🇼",
+    "code": "PW",
+    "timezone": "Pacific/Palau",
+    "language": "Palauan", 
+    "languageCode": "pau" 
+  },
+  "681": {
+    "name": "Wallis and Futuna",
+    "dialCode": "+681",
+    "emoji": "🇼🇫",
+    "code": "WF",
+    "timezone": "Pacific/Wallis",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "682": {
+    "name": "Cook Islands",
+    "dialCode": "+682",
+    "emoji": "🇨🇰",
+    "code": "CK",
+    "timezone": "Pacific/Rarotonga",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "683": {
+    "name": "Niue",
+    "dialCode": "+683",
+    "emoji": "🇳🇺",
+    "code": "NU",
+    "timezone": "Pacific/Niue",
+    "language": "Niuean", 
+    "languageCode": "niu" 
+  },
+  "685": {
+    "name": "Samoa",
+    "dialCode": "+685",
+    "emoji": "🇼🇸",
+    "code": "WS",
+    "timezone": "Pacific/Apia",
+    "language": "Samoan", 
+    "languageCode": "sm" 
+  },
+  "686": {
+    "name": "Kiribati",
+    "dialCode": "+686",
+    "emoji": "🇰🇮",
+    "code": "KI",
+    "timezone": "Pacific/Tarawa",
+    "language": "Gilbertese", 
+    "languageCode": "gil" 
+  },
+  "687": {
+    "name": "New Caledonia",
+    "dialCode": "+687",
+    "emoji": "🇳🇨",
+    "code": "NC",
+    "timezone": "Pacific/Noumea",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "688": {
+    "name": "Tuvalu",
+    "dialCode": "+688",
+    "emoji": "🇹🇻",
+    "code": "TV",
+    "timezone": "Pacific/Funafuti",
+    "language": "Tuvaluan", 
+    "languageCode": "tvl" 
+  },
+  "689": {
+    "name": "French Polynesia",
+    "dialCode": "+689",
+    "emoji": "🇵🇫",
+    "code": "PF",
+    "timezone": "Pacific/Tahiti",
+    "language": "French", 
+    "languageCode": "fr" 
+  },
+  "690": {
+    "name": "Tokelau",
+    "dialCode": "+690",
+    "emoji": "🇹🇰",
+    "code": "TK",
+    "timezone": "Pacific/Fakaofo",
+    "language": "Tokelauan", 
+    "languageCode": "tkl" 
+  },
+  "691": {
+    "name": "Micronesia, Federated States of Micronesia",
+    "dialCode": "+691",
+    "emoji": "🇫🇲",
+    "code": "FM",
+    "timezone": "Pacific/Chuuk",
+    "language": "English", 
+    "languageCode": "en" 
+  },
+  "692": {
+    "name": "Marshall Islands",
+    "dialCode": "+692",
+    "emoji": "🇲🇭",
+    "code": "MH",
+    "timezone": "Pacific/Majuro",
+    "language": "Marshallese", 
+    "languageCode": "mh" 
+  },
+  "850": {
+    "name": "Korea, Democratic People's Republic of Korea",
+    "dialCode": "+850",
+    "emoji": "🇰🇵",
+    "code": "KP",
+    "timezone": "Asia/Pyongyang",
+    "language": "Korean", 
+    "languageCode": "ko" 
+  },
+  "852": {
+    "name": "Hong Kong",
+    "dialCode": "+852",
+    "emoji": "🇭🇰",
+    "code": "HK",
+    "timezone": "Asia/Hong_Kong",
+    "language": "Chinese", 
+    "languageCode": "zh" 
+  },
+    "853": {
+  "name": "Macao",
+  "dialCode": "+853",
+  "emoji": "🇲🇴",
+  "code": "MO",
+  "timezone": "Asia/Macau",
+  "language": "Chinese", 
+  "languageCode": "zh" 
+    },
+    "855": {
+  "name": "Cambodia",
+  "dialCode": "+855",
+  "emoji": "🇰🇭",
+  "code": "KH",
+  "timezone": "Asia/Phnom_Penh",
+  "language": "Khmer", 
+  "languageCode": "km" 
+    },
+    "856": {
+  "name": "Laos",
+  "dialCode": "+856",
+  "emoji": "🇱🇦",
+  "code": "LA",
+  "timezone": "Asia/Vientiane",
+  "language": "Lao", 
+  "languageCode": "lo" 
+    },
+    "872": {
+  "name": "Pitcairn",
+  "dialCode": "+872",
+  "emoji": "🇵🇳",
+  "code": "PN",
+  "timezone": "Pacific/Pitcairn",
+  "language": "English", 
+  "languageCode": "en" 
+    },
+    "880": {
+  "name": "Bangladesh",
+  "dialCode": "+880",
+  "emoji": "🇧🇩",
+  "code": "BD",
+  "timezone": "Asia/Dhaka",
+  "language": "Bengali", 
+  "languageCode": "bn" 
+    },
+    "886": {
+  "name": "Taiwan",
+  "dialCode": "+886",
+  "emoji": "🇹🇼",
+  "code": "TW",
+  "timezone": "Asia/Taipei",
+  "language": "Chinese", 
+  "languageCode": "zh" 
+    },
+    "960": {
+  "name": "Maldives",
+  "dialCode": "+960",
+  "emoji": "🇲🇻",
+  "code": "MV",
+  "timezone": "Indian/Maldives",
+  "language": "Dhivehi", 
+  "languageCode": "dv" 
+    },
+    "961": {
+  "name": "Lebanon",
+  "dialCode": "+961",
+  "emoji": "🇱🇧",
+  "code": "LB",
+  "timezone": "Asia/Beirut",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "962": {
+  "name": "Jordan",
+  "dialCode": "+962",
+  "emoji": "🇯🇴",
+  "code": "JO",
+  "timezone": "Asia/Amman",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "963": {
+  "name": "Syrian Arab Republic",
+  "dialCode": "+963",
+  "emoji": "🇸🇾",
+  "code": "SY",
+  "timezone": "Asia/Damascus",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "964": {
+  "name": "Iraq",
+  "dialCode": "+964",
+  "emoji": "🇮🇶",
+  "code": "IQ",
+  "timezone": "Asia/Baghdad",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "965": {
+  "name": "Kuwait",
+  "dialCode": "+965",
+  "emoji": "🇰🇼",
+  "code": "KW",
+  "timezone": "Asia/Kuwait",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "966": {
+  "name": "Saudi Arabia",
+  "dialCode": "+966",
+  "emoji": "🇸🇦",
+  "code": "SA",
+  "timezone": "Asia/Riyadh",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "967": {
+  "name": "Yemen",
+  "dialCode": "+967",
+  "emoji": "🇾🇪",
+  "code": "YE",
+  "timezone": "Asia/Aden",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "968": {
+  "name": "Oman",
+  "dialCode": "+968",
+  "emoji": "🇴🇲",
+  "code": "OM",
+  "timezone": "Asia/Muscat",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "970": {
+  "name": "Palestinian Territory, Occupied",
+  "dialCode": "+970",
+  "emoji": "🇵🇸",
+  "code": "PS",
+  "timezone": "Asia/Hebron",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "971": {
+  "name": "United Arab Emirates",
+  "dialCode": "+971",
+  "emoji": "🇦🇪",
+  "code": "AE",
+  "timezone": "Asia/Dubai",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "972": {
+  "name": "Israel",
+  "dialCode": "+972",
+  "emoji": "🇮🇱",
+  "code": "IL",
+  "timezone": "Asia/Jerusalem",
+  "language": "Hebrew", 
+  "languageCode": "he" 
+    },
+    "973": {
+  "name": "Bahrain",
+  "dialCode": "+973",
+  "emoji": "🇧🇭",
+  "code": "BH",
+  "timezone": "Asia/Bahrain",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "974": {
+  "name": "Qatar",
+  "dialCode": "+974",
+  "emoji": "🇶🇦",
+  "code": "QA",
+  "timezone": "Asia/Qatar",
+  "language": "Arabic", 
+  "languageCode": "ar" 
+    },
+    "975": {
+  "name": "Bhutan",
+  "dialCode": "+975",
+  "emoji": "🇧🇹",
+  "code": "BT",
+  "timezone": "Asia/Thimphu",
+  "language": "Dzongkha", 
+  "languageCode": "dz" 
+    },
+    "976": {
+  "name": "Mongolia",
+  "dialCode": "+976",
+  "emoji": "🇲🇳",
+  "code": "MN",
+  "timezone": "Asia/Ulaanbaatar",
+  "language": "Mongolian", 
+  "languageCode": "mn" 
+    },
+  "977": {
+   "name": "Nepal",
+   "dialCode": "+977",
+   "emoji": "🇳🇵",
+   "code": "NP",
+   "timezone": "Asia/Kathmandu",
+   "language": "Nepali", 
+   "languageCode": "ne" 
+  },
+  "992": {
+   "name": "Tajikistan",
+   "dialCode": "+992",
+   "emoji": "🇹🇯",
+   "code": "TJ",
+   "timezone": "Asia/Dushanbe",
+   "language": "Tajiki", 
+   "languageCode": "tg" 
+  },
+  "993": {
+   "name": "Turkmenistan",
+   "dialCode": "+993",
+   "emoji": "🇹🇲",
+   "code": "TM",
+   "timezone": "Asia/Ashgabat",
+   "language": "Turkmen", 
+   "languageCode": "tk" 
+  },
+  "994": {
+   "name": "Azerbaijan",
+   "dialCode": "+994",
+   "emoji": "🇦🇿",
+   "code": "AZ",
+   "timezone": "Asia/Baku",
+   "language": "Azerbaijani", 
+   "languageCode": "az" 
+  },
+  "995": {
+   "name": "Georgia",
+   "dialCode": "+995",
+   "emoji": "🇬🇪",
+   "code": "GE",
+   "timezone": "Asia/Tbilisi",
+   "language": "Georgian", 
+   "languageCode": "ka" 
+  },
+  "996": {
+   "name": "Kyrgyzstan",
+   "dialCode": "+996",
+   "emoji": "🇰🇬",
+   "code": "KG",
+   "timezone": "Asia/Bishkek",
+   "language": "Kyrgyz", 
+   "languageCode": "ky" 
+  },
+  "998": {
+   "name": "Uzbekistan",
+   "dialCode": "+998",
+   "emoji": "🇺🇿",
+   "code": "UZ",
+   "timezone": "Asia/Samarkand",
+   "language": "Uzbek", 
+   "languageCode": "uz" 
+  },
+  "1242": {
+   "name": "Bahamas",
+   "dialCode": "+1242",
+   "emoji": "🇧🇸",
+   "code": "BS",
+   "timezone": "America/Nassau",
+   "language": "English", 
+   "languageCode": "en" 
+  },
+  "1246": {
+   "name": "Barbados",
+   "dialCode": "+1246",
+   "emoji": "🇧🇧",
+   "code": "BB",
+   "timezone": "America/Barbados",
+   "language": "English", 
+   "languageCode": "en" 
+  },
+  "1264": {
+   "name": "Anguilla",
+   "dialCode": "+1264",
+   "emoji": "🇦🇮",
+   "code": "AI",
+   "timezone": "America/Anguilla",
+   "language": "English", 
+   "languageCode": "en" 
+  },
+  "1268": {
+   "name": "Antigua and Barbuda",
+   "dialCode": "+1268",
+   "emoji": "🇦🇬",
+   "code": "AG",
+   "timezone": "America/Antigua",
+   "language": "English", 
+   "languageCode": "en" 
+  },
+  "1284": {
+   "name": "Virgin Islands, British",
+   "dialCode": "+1284",
+   "emoji": "🇻🇬",
+   "code": "VG",
+   "timezone": "America/Tortola",
+   "language": "English", 
+   "languageCode": "en" 
+  },
+  "1340": {
+   "name": "Virgin Islands, U.S.",
+   "dialCode": "+1340",
+   "emoji": "🇻🇮",
+   "code": "VI",
+   "timezone": "America/St_Thomas",
+   "language": "English", 
+   "languageCode": "en" 
+  },
+   "1441": {
+    "name": "Bermuda",
+    "dialCode": "+1441",
+    "emoji": "🇧🇲",
+    "code": "BM",
+    "timezone": "Atlantic/Bermuda",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1473": {
+    "name": "Grenada",
+    "dialCode": "+1473",
+    "emoji": "🇬🇩",
+    "code": "GD",
+    "timezone": "America/Grenada",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1649": {
+    "name": "Turks and Caicos Islands",
+    "dialCode": "+1649",
+    "emoji": "🇹🇨",
+    "code": "TC",
+    "timezone": "America/Grand_Turk",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1664": {
+    "name": "Montserrat",
+    "dialCode": "+1664",
+    "emoji": "🇲🇸",
+    "code": "MS",
+    "timezone": "America/Montserrat",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1670": {
+    "name": "Northern Mariana Islands",
+    "dialCode": "+1670",
+    "emoji": "🇲🇵",
+    "code": "MP",
+    "timezone": "Pacific/Saipan",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1671": {
+    "name": "Guam",
+    "dialCode": "+1671",
+    "emoji": "🇬🇺",
+    "code": "GU",
+    "timezone": "Pacific/Guam",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1684": {
+    "name": "American Samoa",
+    "dialCode": "+1684",
+    "emoji": "🇦🇸",
+    "code": "AS",
+    "timezone": "Pacific/Pago_Pago",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1758": {
+    "name": "Saint Lucia",
+    "dialCode": "+1758",
+    "emoji": "🇱🇨",
+    "code": "LC",
+    "timezone": "America/St_Lucia",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1767": {
+    "name": "Dominica",
+    "dialCode": "+1767",
+    "emoji": "🇩🇲",
+    "code": "DM",
+    "timezone": "America/Dominica",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1784": {
+    "name": "Saint Vincent and the Grenadines",
+    "dialCode": "+1784",
+    "emoji": "🇻🇨",
+    "code": "VC",
+    "timezone": "America/St_Vincent",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1849": {
+    "name": "Dominican Republic",
+    "dialCode": "+1849",
+    "emoji": "🇩🇴",
+    "code": "DO",
+    "timezone": "America/Santo_Domingo",
+    "language": "Spanish", 
+    "languageCode": "es" 
+   },
+   "1868": {
+    "name": "Trinidad and Tobago",
+    "dialCode": "+1868",
+    "emoji": "🇹🇹",
+    "code": "TT",
+    "timezone": "America/Port_of_Spain",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1869": {
+    "name": "Saint Kitts and Nevis",
+    "dialCode": "+1869",
+    "emoji": "🇰🇳",
+    "code": "KN",
+    "timezone": "America/St_Kitts",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1876": {
+    "name": "Jamaica",
+    "dialCode": "+1876",
+    "emoji": "🇯🇲",
+    "code": "JM",
+    "timezone": "America/Jamaica",
+    "language": "English", 
+    "languageCode": "en" 
+   },
+   "1939": {
+    "name": "Puerto Rico",
+    "dialCode": "+1939",
+    "emoji": "🇵🇷",
+    "code": "PR",
+    "timezone": "America/Puerto_Rico",
+    "language": "Spanish", 
+    "languageCode": "es" 
+   }
+  }
