@@ -1,0 +1,1306 @@
+
+1. CORE IDEA 
+
+The project is a compact standalone dual-SIM cellular communication device containing two physical Nano-SIM cards, a cellular modem, processing system, Bluetooth, Wi-Fi, internal storage, battery, power-management circuitry, antennas, physical controls, and status indicators.
+
+The device operates independently from the smartphone and has its own cellular connection. The smartphone is used as the main user interface through one custom Flutter Android application communicating with the device over Bluetooth.
+
+The Bluetooth connection is a local control and communication link between the smartphone and the device. It is not the cellular Internet connection.
+
+The device must be capable of continuing to operate when the smartphone is disconnected. It should continue performing supported cellular functions such as receiving calls and SMS, maintaining network registration, operating the Wi-Fi hotspot when configured to do so, and storing events internally.
+
+When the smartphone reconnects through Bluetooth, the device synchronizes stored events with the application.
+
+The system contains two independent physical SIM slots. The software must treat SIM 1 and SIM 2 as separate cellular identities and expose their individual status, signal, carrier, network registration, calls, SMS, and mobile-data configuration according to the capabilities of the selected cellular modem.
+
+Example:
+
+SIM 1:
+Carrier: Vodafone Egypt
+Signal: 78%
+Network: LTE
+Mobile Data: Disabled
+
+SIM 2:
+Carrier: Another supported carrier
+Signal: 64%
+Network: LTE
+Mobile Data: Enabled
+
+The user should be able to select which SIM is used for supported operations such as outgoing calls, outgoing SMS, and mobile data.
+
+The device also provides a configurable Wi-Fi hotspot. Mobile data is obtained from the selected cellular SIM and shared through the device’s Wi-Fi interface. The hotspot must be able to operate without the owner’s smartphone being connected.
+
+Example:
+
+SIM 1 → Mobile Data
+↓
+Cellular Network
+↓
+Cellular Modem
+↓
+Device Network Stack
+↓
+Wi-Fi Hotspot
+↓
+Laptop / Smartphone / Tablet
+
+The device should support multiple power states so that it does not continuously consume maximum power when inactive.
+
+The primary power states are:
+
+ACTIVE:
+Used during calls, active data traffic, hotspot usage, Bluetooth communication, configuration, firmware operations, and other intensive operations.
+
+IDLE:
+Used after a configurable period of inactivity. Unnecessary processing and peripherals should be reduced while maintaining the minimum functionality required for cellular reception, SMS reception, and Bluetooth synchronization when configured.
+
+SLEEP:
+Used for deeper power saving. The device should retain the minimum required cellular functionality and store incoming events internally. Bluetooth and mobile data/hotspot behavior during sleep must be configurable by the user.
+
+The user should have an application setting controlling whether Bluetooth and mobile data/hotspot remain active during the low-power state.
+
+Example:
+
+Keep Bluetooth During Sleep: ON
+Keep Mobile Data During Sleep: OFF
+
+In this configuration, Bluetooth remains available for synchronization while the Wi-Fi hotspot is disabled to save battery.
+
+Another configuration could be:
+
+Keep Bluetooth During Sleep: ON
+Keep Mobile Data During Sleep: ON
+Keep Hotspot During Sleep: ON
+
+In this configuration, the device remains capable of providing Internet access even while in the low-power state, at the cost of higher battery consumption.
+
+The device should contain internal storage for lightweight persistent data such as call history, SMS messages, timestamps, configuration, pairing information, synchronization state, and system events. Voice calls should not be recorded unless a future version explicitly adds that feature.
+
+The system should use a defined and authenticated Bluetooth communication protocol between the application and firmware.
+
+Overall architecture:
+
+Flutter Android Application
+↕
+Authenticated Bluetooth Communication
+↕
+Device Firmware
+↕
+Main Processor / Controller
+↕
+Cellular Modem
+↕
+SIM 1 / SIM 2
+↕
+Cellular Network
+
+For Internet sharing:
+
+Cellular Network
+↓
+Cellular Modem
+↓
+Mobile Data
+↓
+Device Network Stack
+↓
+Wi-Fi Hotspot
+↓
+Connected Devices
+
+2. HARDWARE — الهاردوير
+
+The hardware must be developed in two stages.
+
+Stage 1 is a development prototype using commercially available development boards, modem modules, breakout boards, antennas, power supplies, and other components.
+
+Stage 2 is the final custom hardware consisting of a custom multi-layer PCB and a custom enclosure.
+
+The final PCB should only be designed after the critical functions have been validated on the prototype.
+
+2.1 Cellular Modem
+
+The cellular modem is the main component responsible for communication with cellular networks.
+
+The modem must be selected based on the actual required features rather than simply choosing a generic LTE module.
+
+Required capabilities should include, where supported by the selected network and modem:
+
+* LTE connectivity
+* Voice calls
+* SMS
+* Mobile data
+* VoLTE where required
+* Dual-SIM operation
+* SIM switching/selection
+* Network registration information
+* Signal-strength information
+* Operator information
+* Network-type information
+* Cellular status information
+* Reliable control interface
+* Audio interface suitable for the final voice architecture
+* Appropriate LTE bands for the target countries/carriers
+* Appropriate power consumption
+
+The modem must be tested with the actual SIM cards and networks that the final product is expected to support.
+
+The project must not assume that every dual-SIM LTE modem supports two completely independent simultaneous cellular connections.
+
+The modem’s actual dual-SIM architecture must be documented.
+
+For example, some modem architectures may support Dual SIM Dual Standby rather than two simultaneously active cellular call sessions.
+
+This distinction must be established before implementing the final SIM behavior.
+
+2.2 SIM System
+
+The device must contain two physical Nano-SIM slots.
+
+The physical design should provide:
+
+SIM 1 → Nano-SIM
+SIM 2 → Nano-SIM
+
+Each slot must have appropriate electrical protection and routing according to the modem manufacturer’s reference design.
+
+The firmware must be able to determine:
+
+* SIM inserted/not inserted
+* SIM initialization state
+* SIM registration state
+* Operator
+* Signal
+* Network type
+* Roaming status
+* SIM-related errors
+
+The application should display these values separately.
+
+Example:
+
+SIM 1
+Status: Ready
+Carrier: Vodafone
+Network: LTE
+Signal: 4/5
+Roaming: No
+
+SIM 2
+Status: Ready
+Carrier: Carrier X
+Network: LTE
+Signal: 3/5
+Roaming: Yes
+
+2.3 Main Processor / MCU / SoC
+
+A main processor is required to coordinate:
+
+* Cellular modem
+* Bluetooth
+* Wi-Fi
+* Application protocol
+* LEDs
+* Buttons
+* Storage
+* Power states
+* Diagnostics
+* Configuration
+* Synchronization
+
+The processor must be selected after validating the required wireless and audio architecture.
+
+Do not automatically select a specific MCU before validating the Bluetooth audio requirements.
+
+For example, an MCU that supports Wi-Fi and Bluetooth Low Energy may not provide the Classic Bluetooth profiles required for a particular audio architecture.
+
+Therefore, Bluetooth audio capability must be considered separately from simply having Bluetooth connectivity.
+
+2.4 Bluetooth
+
+Bluetooth is used for communication between the physical device and the trusted smartphone.
+
+It should provide:
+
+* Initial pairing
+* Authentication
+* Device identification
+* Command transmission
+* Status updates
+* Call events
+* SMS events
+* Synchronization
+* Configuration
+* Battery information
+* Device settings
+* Wake/reconnect functionality
+
+The device should remember one trusted owner smartphone.
+
+The Bluetooth MAC address must not be treated as the only security mechanism.
+
+The implementation should use proper Bluetooth bonding/identity and application-level authentication.
+
+2.5 Random LED Pairing System
+
+The four LEDs must also be capable of displaying a temporary random 4-bit pairing pattern.
+
+The pattern must be generated randomly for each new pairing session.
+
+Each LED represents one bit:
+
+LED 1 = Bit 1
+LED 2 = Bit 2
+LED 3 = Bit 3
+LED 4 = Bit 4
+
+For example:
+
+LED 1 ON
+LED 2 ON
+LED 3 OFF
+LED 4 ON
+
+represents:
+
+1101
+
+Another pairing session could generate:
+
+0100
+
+Another could generate:
+
+1011
+
+The pattern must not be permanently fixed.
+
+Every time the device enters a new pairing session, it generates a new temporary random pattern.
+
+The application must request/display the pairing verification value and require the user to enter the same pattern before completing the trusted-device registration.
+
+Example:
+
+Physical Device:
+
+● ● ○ ●
+
+Application:
+
+PAIRING CODE
+1101
+
+Enter the code shown on the device.
+
+If the entered code is correct, pairing continues.
+
+If incorrect, the pairing attempt should fail.
+
+The generated pairing code should be temporary and should not be reused as a permanent authentication credential.
+
+2.6 Wake / Bluetooth Button
+
+The device must contain a dedicated physical Wake/Bluetooth button.
+
+Its normal functions include:
+
+* Wake the device
+* Activate Bluetooth
+* Trigger Bluetooth reconnection
+* Enter pairing mode when configured
+* Provide user feedback through LEDs
+
+Example:
+
+Device is sleeping.
+
+User presses WAKE/BT.
+
+↓
+
+Device wakes required systems.
+
+↓
+
+Bluetooth starts.
+
+↓
+
+Device searches for the trusted smartphone.
+
+↓
+
+Trusted smartphone reconnects.
+
+↓
+
+Stored events synchronize.
+
+2.7 Reset Button
+
+A recessed physical reset button must be included.
+
+It should be difficult to activate accidentally.
+
+A long press, for example approximately 10 seconds, should initiate the reset operation.
+
+The reset operation may:
+
+* Clear trusted Bluetooth pairing
+* Clear owner authentication information
+* Restore device configuration defaults
+* Enter pairing mode
+
+The reset operation should not accidentally erase user call/SMS history unless explicitly designed to do so.
+
+A confirmation mechanism should be considered before destructive data deletion.
+
+2.8 Power Button
+
+The device should have a physical ON/OFF control.
+
+The exact implementation must be chosen carefully because a cellular modem should not necessarily be abruptly power-cut during normal operation.
+
+A controlled shutdown sequence is preferred.
+
+Example:
+
+User switches OFF.
+
+↓
+
+Firmware receives shutdown request.
+
+↓
+
+Active calls/data operations are handled.
+
+↓
+
+Modem is placed into an appropriate low-power/shutdown state.
+
+↓
+
+Main system powers down safely.
+
+2.9 Battery
+
+The device should use a flat rechargeable Li-Po battery.
+
+Target runtime:
+
+Approximately 8–16 hours depending on:
+
+* Signal quality
+* Call duration
+* LTE activity
+* Hotspot usage
+* Wi-Fi traffic
+* Bluetooth activity
+* Processor workload
+* Sleep configuration
+* Battery capacity
+
+The battery capacity must be selected after measuring the actual power consumption of the prototype.
+
+The project should not choose a battery only based on physical size.
+
+2.10 Charging and Power Management
+
+The power system should include:
+
+* USB-C input
+* Battery charging IC
+* Battery protection
+* Power-path management
+* Voltage regulation
+* Buck converters where required
+* Appropriate power rails
+* Current monitoring where useful
+* Thermal protection
+
+Separate power requirements for the modem, processor, RF system, storage, LEDs, and other peripherals must be considered.
+
+The cellular modem may generate significant current peaks during network transmission, so the power system must be designed around the modem’s peak current requirements rather than its average current only.
+
+2.11 USB-C
+
+USB-C should provide:
+
+* Battery charging
+* Firmware update
+* Debugging
+* Development communication
+* Diagnostics
+* Potential data communication
+
+During development, USB-C should allow the development computer to communicate with the device where supported.
+
+Example:
+
+Computer
+↓ USB-C
+Device
+↓
+Firmware update
+
+The final production firmware should provide an appropriate update mechanism rather than exposing unrestricted debug access.
+
+2.12 LEDs
+
+Four white LEDs should normally indicate battery level.
+
+Example:
+
+1 LED = Low / approximately 25%
+2 LEDs = approximately 50%
+3 LEDs = approximately 75%
+4 LEDs = approximately 100%
+
+The LEDs may temporarily display:
+
+* Pairing mode
+* Random pairing code
+* Bluetooth connected
+* Bluetooth disconnected
+* Reset mode
+* Error state
+* Firmware update
+* Battery status
+
+The firmware must define a priority system so multiple states do not conflict.
+
+2.13 Internal Storage
+
+Internal non-volatile storage should contain:
+
+* Call history
+* SMS messages
+* Event logs
+* Pairing information
+* Device settings
+* Hotspot settings
+* Synchronization state
+* Firmware metadata
+* Diagnostic information
+
+Example:
+
+{
+“type”: “missed_call”,
+“sim”: 1,
+“number”: “+201XXXXXXXXX”,
+“timestamp”: “…”,
+“synced”: false
+}
+
+The exact storage format will be defined during firmware development.
+
+2.14 Antennas
+
+The device should have:
+
+* Cellular antenna system
+* Wi-Fi antenna
+* Bluetooth antenna
+
+Antenna placement must account for:
+
+* RF isolation
+* Ground planes
+* PCB layout
+* Cellular frequency bands
+* Wi-Fi/Bluetooth interference
+* Battery placement
+* Metal components
+* Enclosure material
+* Human-body proximity
+
+The final antenna design should follow the selected modem manufacturer’s RF reference design.
+
+2.15 PCB
+
+The final PCB should be custom designed.
+
+The PCB should contain, depending on the selected architecture:
+
+* Cellular modem
+* Main processor
+* SIM interfaces
+* Power-management circuits
+* Charging circuit
+* Storage
+* Bluetooth/Wi-Fi circuitry
+* USB-C
+* Buttons
+* LEDs
+* Antenna connectors or antenna structures
+* Debug/test points
+
+The PCB should include test points for development and manufacturing diagnostics.
+
+The RF section should be physically separated from noisy digital/power sections where appropriate.
+
+2.16 Prototype Before Final PCB
+
+The first hardware prototype should intentionally be larger.
+
+The goal is not miniaturization.
+
+The prototype must prove:
+
+1. SIM detection
+2. Network registration
+3. Signal information
+4. SMS receiving
+5. SMS sending
+6. Incoming call
+7. Outgoing call
+8. Call audio architecture
+9. Mobile data
+10. Wi-Fi hotspot
+11. Bluetooth connection
+12. Bluetooth protocol
+13. Storage
+14. Power management
+15. Sleep/wake
+16. Synchronization
+17. Dual-SIM behavior
+
+Only after these functions work reliably should the team begin the final compact PCB.
+
+3. SOFTWARE
+
+The software consists of one custom Flutter Android application and firmware running on the physical device.
+
+The Android application is the primary user interface.
+
+The device firmware is responsible for controlling the physical hardware.
+
+The cellular modem is controlled by the firmware through the modem’s supported interface.
+
+3.1 Software Architecture
+
+The overall architecture is:
+
+Flutter Android APK
+↓
+Bluetooth Communication Layer
+↓
+Authentication / Session
+↓
+Device Command Protocol
+↓
+Device Firmware
+↓
+Modem Controller
+↓
+Cellular Modem
+↓
+SIM 1 / SIM 2
+
+The firmware also communicates with:
+
+Wi-Fi
+Bluetooth
+Storage
+Power Management
+LED Controller
+Buttons
+Battery Monitor
+
+3.2 One Application
+
+Everything should be inside one APK.
+
+The application should not require separate custom applications for:
+
+* Calls
+* SMS
+* Hotspot
+* SIM management
+* Device settings
+* Pairing
+* Synchronization
+
+The same application contains all of these sections.
+
+3.3 Main Dashboard
+
+The dashboard should display:
+
+* Device connection
+* Battery
+* Bluetooth
+* SIM 1
+* SIM 2
+* Signal
+* Network type
+* Active data SIM
+* Mobile data
+* Hotspot
+* Connected Wi-Fi devices
+* Device power state
+
+Example:
+
+DEVICE
+Connected
+
+Battery
+82%
+
+Bluetooth
+Connected
+
+SIM 1
+Vodafone
+LTE
+Signal 4/5
+
+SIM 2
+Carrier X
+LTE
+Signal 3/5
+
+Mobile Data
+SIM 1
+
+Hotspot
+ON
+2 Devices Connected
+
+Power State
+ACTIVE
+
+3.4 SIM Management
+
+The application must display each SIM separately.
+
+SIM 1 and SIM 2 should have independent information cards.
+
+The application should display, where available:
+
+* SIM status
+* Carrier
+* Number
+* Signal strength
+* Network type
+* Roaming
+* Registration
+* Data state
+* Data usage
+
+The user should be able to select the data SIM.
+
+Example:
+
+Mobile Data SIM:
+
+○ SIM 1
+● SIM 2
+
+The actual simultaneous SIM behavior must follow the selected modem’s hardware capabilities.
+
+3.5 Dialer
+
+The application must include a complete numeric dial pad.
+
+Example:
+
+1 2 3
+4 5 6
+7 8 9
+
+* 0 #
+
+The user can:
+
+* Enter a number
+* Delete digits
+* Select contact
+* Select SIM
+* Call
+* End call
+
+Example:
+
+Number:
+010XXXXXXXX
+
+SIM:
+SIM 1
+
+[CALL]
+
+The application sends:
+
+CALL SIM=1 NUMBER=010XXXXXXXX
+
+The firmware validates the request and instructs the modem to place the call.
+
+3.6 Incoming Calls
+
+When the modem receives an incoming call:
+
+Modem
+↓
+Firmware
+↓
+Bluetooth Event
+↓
+Android Application
+
+The application should display:
+
+Incoming Call
+
+Mohamed
++201XXXXXXXXX
+
+SIM 1
+
+[ANSWER]
+[REJECT]
+
+The actual call audio routing must be validated experimentally because the smartphone is not the cellular modem itself and Android does not automatically treat an external cellular device as a native phone-call source.
+
+The final implementation must define the audio architecture before production.
+
+3.7 Call History
+
+The application should maintain:
+
+* Incoming calls
+* Outgoing calls
+* Missed calls
+* Rejected calls
+* Completed calls
+
+Each record should include:
+
+* Number
+* Contact name
+* SIM
+* Direction
+* Time
+* Date
+* Duration
+* Status
+
+Example:
+
+Missed
+Ahmed
+SIM 2
++201XXXXXXXXX
+10:42 PM
+
+The user should be able to delete individual records or clear history.
+
+3.8 SMS
+
+The application should behave as a complete SMS application.
+
+Features:
+
+* Conversations
+* Send
+* Receive
+* Read
+* Unread
+* Delete
+* Mark as read
+* Mark all as read
+* SIM selection
+
+Example:
+
+Conversation:
+Ahmed
++201XXXXXXXXX
+
+SIM:
+SIM 2
+
+Message:
+Hello
+
+[Send]
+
+Firmware command:
+
+SEND_SMS
+SIM=2
+NUMBER=+201XXXXXXXXX
+MESSAGE=“Hello”
+
+3.9 Offline SMS Reception
+
+If Bluetooth is disconnected:
+
+Incoming SMS
+↓
+Cellular Modem
+↓
+Firmware
+↓
+Internal Storage
+
+When Bluetooth reconnects:
+
+Device
+↓
+Synchronization
+↓
+Android Application
+
+The application then displays the SMS normally.
+
+3.10 Offline Call History
+
+The same mechanism applies to calls.
+
+Example:
+
+Phone disconnected.
+
+SIM 1 receives a call.
+
+The device stores:
+
+CALL
+SIM=1
+NUMBER=+201XXXXXXXXX
+TYPE=MISSED
+TIME=18:32
+
+Later:
+
+Phone reconnects.
+
+Device sends:
+
+SYNC_EVENT
+
+Application adds:
+
+Missed call from +201XXXXXXXXX
+18:32
+SIM 1
+
+3.11 Bluetooth Protocol
+
+The application and firmware should communicate using a defined protocol.
+
+Every request should contain:
+
+* Command
+* Request ID
+* Parameters
+* Authentication/session information where required
+
+Every response should contain:
+
+* Request ID
+* Status
+* Error code if applicable
+* Data
+
+Example:
+
+REQUEST:
+
+CALL
+SIM=1
+NUMBER=+201XXXXXXXXX
+
+RESPONSE:
+
+REQUEST_ID=1234
+STATUS=CALL_STARTED
+
+Another example:
+
+GET_SIM_STATUS
+SIM=2
+
+Response:
+
+SIM=2
+STATUS=READY
+CARRIER=“Carrier”
+SIGNAL=72
+NETWORK=“LTE”
+ROAMING=false
+
+The final protocol may use JSON, binary packets, CBOR, or another structured format depending on memory, performance, and security requirements.
+
+3.12 Authentication
+
+The application must authenticate with the device.
+
+The device should not accept sensitive commands from arbitrary Bluetooth devices.
+
+Sensitive commands include:
+
+* Call
+* SMS
+* SIM configuration
+* Mobile data
+* Hotspot configuration
+* Device reset
+* Pairing changes
+* Firmware update
+* Device configuration
+
+The initial pairing process uses the randomly generated four-LED pattern.
+
+The pattern is only part of the pairing process and should not become the permanent authentication secret.
+
+After pairing, proper Bluetooth bonding and application-level authentication should protect future sessions.
+
+3.13 Pairing Process
+
+Initial state:
+
+Device has no trusted phone.
+
+User presses the pairing/wake control.
+
+Device:
+
+1. Enters pairing mode.
+2. Generates a random 4-bit pattern.
+3. Displays it through the four LEDs.
+4. Makes itself discoverable/available according to the selected Bluetooth architecture.
+5. Waits for the application.
+
+Example:
+
+LEDs:
+
+● ○ ● ●
+
+Pattern:
+
+1011
+
+Application:
+
+PAIR NEW DEVICE
+
+Code shown on device:
+
+1011
+
+Enter code:
+
+[ 1 0 1 1 ]
+
+If correct:
+
+PAIRING VERIFIED
+
+The device and smartphone establish the trusted relationship.
+
+If incorrect:
+
+PAIRING FAILED
+
+The temporary pairing session is invalidated or retried according to the security design.
+
+A new pairing session must generate a new random pattern.
+
+3.14 Hotspot
+
+The application should control:
+
+* Enable/disable
+* SSID
+* Password
+* Maximum clients
+* Connected devices
+* Block device
+* Unblock device
+* View device information where available
+
+Example:
+
+HOTSPOT
+
+Status:
+ON
+
+SSID:
+PocketDevice
+
+Password:
+
+⸻
+
+Maximum Devices:
+5
+
+Connected:
+2
+
+Device 1:
+Galaxy
+192.168.43.10
+
+Device 2:
+Laptop
+192.168.43.11
+
+The exact client-management features depend on the selected Wi-Fi/network stack.
+
+3.15 Power State Machine
+
+The firmware should implement a state machine.
+
+Example:
+
+ACTIVE
+↓
+Inactivity Timer
+↓
+IDLE
+↓
+Extended Inactivity
+↓
+SLEEP
+
+Events can move the device back toward ACTIVE.
+
+Example:
+
+Incoming Call
+↓
+SLEEP
+↓
+Required Systems Wake
+↓
+Call Handling
+↓
+ACTIVE
+
+Bluetooth Wake:
+
+SLEEP
+↓
+WAKE BUTTON
+↓
+Bluetooth ON
+↓
+Trusted Phone Reconnect
+↓
+Synchronization
+
+3.16 Sleep Configuration
+
+Application settings:
+
+Sleep Mode:
+ON
+
+Keep Bluetooth:
+ON/OFF
+
+Keep Mobile Data:
+ON/OFF
+
+Keep Hotspot:
+ON/OFF
+
+Idle Timeout:
+4 Hours
+
+Example configuration:
+
+Idle Timeout = 4 hours
+Bluetooth during sleep = ON
+Mobile Data during sleep = OFF
+Hotspot during sleep = OFF
+
+After four hours without relevant activity, the device enters a low-power state while maintaining the required Bluetooth/cellular functionality.
+
+3.17 Synchronization
+
+Synchronization must be reliable and resumable.
+
+Each stored event should have a unique ID and synchronization state.
+
+Example:
+
+EVENT 001
+TYPE = MISSED_CALL
+SYNCED = FALSE
+
+When the phone reconnects:
+
+Phone requests pending events.
+
+Device sends EVENT 001.
+
+Phone confirms:
+
+EVENT 001 RECEIVED
+
+Device changes:
+
+SYNCED = TRUE
+
+This prevents duplicate notifications if Bluetooth disconnects during synchronization.
+
+3.18 Notifications
+
+The application should generate notifications for:
+
+* Incoming call
+* Missed call
+* New SMS
+* Device disconnected
+* Device connected
+* Low battery
+* SIM error
+* Network unavailable
+* Hotspot status
+* Synchronization complete
+* Device errors
+
+Example:
+
+“Missed call from +201XXXXXXXXX — SIM 1”
+
+“New SMS from Ahmed — SIM 2”
+
+“Pocket Device connected”
+
+3.19 Contacts
+
+The application may request Android Contacts permission.
+
+The user can then see contacts inside the custom dialer and messaging interface.
+
+The application should distinguish between:
+
+Known contact:
+Ahmed
++201XXXXXXXXX
+
+Unknown number:
++201XXXXXXXXX
+
+Unknown numbers can still be called or messaged through the numeric interface.
+
+3.20 Firmware Updates
+
+USB-C should provide a development and firmware-update path.
+
+The software should support version information:
+
+Firmware:
+1.0.0
+
+Hardware:
+REV-A
+
+Modem Firmware:
+XXXX
+
+The update process must include validation and protection against incomplete firmware flashing.
+
+A failed update should not intentionally leave the device permanently unusable if the selected processor supports a recovery/bootloader mechanism.
+
+3.21 Diagnostics
+
+The firmware should expose diagnostic information such as:
+
+* Modem status
+* SIM status
+* Network registration
+* Signal
+* Current network
+* Bluetooth state
+* Wi-Fi state
+* Battery voltage
+* Battery percentage
+* Temperature where available
+* Storage state
+* Firmware version
+* Error codes
+
+The application can include a developer/diagnostic screen during development.
+
+3.22 Error Handling
+
+Examples:
+
+SIM missing:
+
+SIM 1
+ERROR: SIM_NOT_PRESENT
+
+Network unavailable:
+
+ERROR: NETWORK_NOT_REGISTERED
+
+SMS failure:
+
+ERROR: SMS_SEND_FAILED
+
+Bluetooth disconnected:
+
+CONNECTION_LOST
+
+Low battery:
+
+BATTERY_LOW
+
+Hotspot failure:
+
+HOTSPOT_START_FAILED
+
+The application should display human-readable messages while retaining technical error codes for debugging.
+
+3.23 Development Order
+
+The implementation should proceed in the following order:
+
+1. Select and validate cellular modem.
+2. Validate SIM 1.
+3. Validate SIM 2.
+4. Validate network registration.
+5. Validate SMS receiving.
+6. Validate SMS sending.
+7. Validate outgoing calls.
+8. Validate incoming calls.
+9. Validate cellular call audio architecture.
+10. Validate LTE mobile data.
+11. Validate Wi-Fi hotspot.
+12. Validate Bluetooth communication.
+13. Implement the Bluetooth protocol.
+14. Build basic Flutter device connection.
+15. Implement device dashboard.
+16. Implement SIM management.
+17. Implement dialer.
+18. Implement call history.
+19. Implement SMS.
+20. Implement hotspot controls.
+21. Implement storage.
+22. Implement synchronization.
+23. Implement pairing security.
+24. Implement power states.
+25. Implement sleep/wake.
+26. Implement firmware updates.
+27. Perform long-duration testing.
+28. Measure power consumption.
+29. Select final battery.
+30. Design final PCB.
+31. Design final enclosure.
+32. Perform final RF, thermal, battery, and reliability testing.
+
+The most important rule for the project is that the final hardware architecture must be based on validated prototype results. In particular, dual-SIM behavior, VoLTE compatibility, cellular bands, cellular call audio, Bluetooth audio routing, Wi-Fi hotspot operation, and power consumption must be tested before committing to the final PCB and enclosure.
